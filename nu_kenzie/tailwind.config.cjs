@@ -18,7 +18,7 @@ module.exports = {
       hovercard: "#000000",
 
       borderColor1:'rgba(233, 236, 239, 1)',
-
+      texttocansado: '#5d5b5c',
       backgroundHeader: "#F8F9FA",
       backgroundlanding: "rgba(0, 0, 0, 0.72)",
       backgroundButton1:'rgba(253, 55, 126, 1)',
