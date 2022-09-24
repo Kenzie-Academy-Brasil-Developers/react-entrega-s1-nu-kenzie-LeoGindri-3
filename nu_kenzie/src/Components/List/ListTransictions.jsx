@@ -29,7 +29,7 @@ export default function Lista({data, setData}){
                     <Botao func={handleValue} valueBtn={'despesa'} onChange={handleValue} className={'h-10 w-17 bg-placeholder  rounded-lg p-2 text-center text-sm text-hovercard    hover:-translate-y-1 ease-in-out duration-75 '} value={'Despesas'}/>
                 </div>
             </div>
-            <div className="bool mt-10 flex flex-col gap-5">
+            <div className="bool mt-10 flex flex-col gap-5  max-h-[500px] overflow-y-auto pr-2">
                 {
                     (data.length === 0)&&(
                         <>
