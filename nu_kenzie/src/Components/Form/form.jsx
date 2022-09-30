@@ -12,7 +12,7 @@ export default function FormNewValue({data, setData}){
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if(inputValue !== '' && inputDescription !== ''){
+        if(inputValue !== '' && inputDescription !== '' && inputValue > 0 ){
             setData([...data, {
                 id: crypto.randomUUID(),
                 description: inputDescription,
@@ -21,7 +21,6 @@ export default function FormNewValue({data, setData}){
             }])
         }
     }
-
     
     return(
         <form className="border-solid border-[1px] border-borderColor1 rounded-lg p-10 w-96 h-max" onSubmit={handleSubmit} >
